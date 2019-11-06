@@ -70,4 +70,14 @@ public extension UIButton {
         let yCenterConstraint = NSLayoutConstraint(item: self, attribute: .centerY, relatedBy: .equal, toItem: activityIndicator, attribute: .centerY, multiplier: 1, constant: 0)
         self.addConstraint(yCenterConstraint)
     }
+    
+    
+      func addShadow(){
+        self.layer.shadowColor = UIColor(red: 234/255, green: 29/255, blue: 44/255, alpha: 1).cgColor
+        self.layer.shadowOffset = CGSize(width: 0, height: 1)
+        self.layer.shadowOpacity = 1.0
+        self.layer.shadowRadius = 5
+        self.layer.masksToBounds = false
+      }
+      
 }
