@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CF8-Oc-QfU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Payment View Controller-->
+        <scene sceneID="813-sa-aAg">
+            <objects>
+                <viewController id="CF8-Oc-QfU" customClass="PaymentViewController" customModule="Housefood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EZB-dJ-0Dz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4U-UP-FZu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCM-5p-AxO">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="dCM-5p-AxO" firstAttribute="top" secondItem="h4U-UP-FZu" secondAttribute="top" id="N5X-2u-mBr"/>
+                                    <constraint firstAttribute="height" constant="50" id="WSM-sO-ueh"/>
+                                    <constraint firstItem="dCM-5p-AxO" firstAttribute="leading" secondItem="h4U-UP-FZu" secondAttribute="leading" id="bQ8-V1-zHG"/>
+                                    <constraint firstAttribute="bottom" secondItem="dCM-5p-AxO" secondAttribute="bottom" id="ege-bA-vud"/>
+                                    <constraint firstAttribute="trailing" secondItem="dCM-5p-AxO" secondAttribute="trailing" id="ueF-jB-tBa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQc-Qg-pQG" customClass="RoundedView" customModule="Housefood" customModuleProvider="target">
+                                <rect key="frame" x="30" y="124" width="354" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Balance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1AY-k8-tsR">
+                                        <rect key="frame" x="10" y="20" width="334" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$400.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lar-yN-vvZ">
+                                        <rect key="frame" x="8" y="55.5" width="338" height="43"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                        <color key="textColor" red="0.9161267876625061" green="0.11499280482530594" blue="0.17505434155464172" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="lar-yN-vvZ" firstAttribute="leading" secondItem="LQc-Qg-pQG" secondAttribute="leading" constant="8" id="9oY-cs-dbh"/>
+                                    <constraint firstAttribute="trailing" secondItem="lar-yN-vvZ" secondAttribute="trailing" constant="8" id="Dml-pF-EwS"/>
+                                    <constraint firstAttribute="trailing" secondItem="1AY-k8-tsR" secondAttribute="trailing" constant="10" id="N8Q-Ue-UNb"/>
+                                    <constraint firstItem="1AY-k8-tsR" firstAttribute="leading" secondItem="LQc-Qg-pQG" secondAttribute="leading" constant="10" id="YXV-8x-tUo"/>
+                                    <constraint firstItem="1AY-k8-tsR" firstAttribute="top" secondItem="LQc-Qg-pQG" secondAttribute="top" constant="20" id="cnt-94-30p"/>
+                                    <constraint firstItem="lar-yN-vvZ" firstAttribute="top" secondItem="1AY-k8-tsR" secondAttribute="bottom" constant="10" id="geF-3T-uuz"/>
+                                    <constraint firstAttribute="height" constant="128" id="tX6-yC-82o"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isDividerVisible" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Withdraw By" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nb6-rJ-Ptg">
+                                <rect key="frame" x="30" y="282" width="116" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="52R-zh-HR0">
+                                <rect key="frame" x="30" y="327.5" width="354" height="128"/>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="yVN-Di-5qT"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="CF8-Oc-QfU" id="akg-Wl-bbQ"/>
+                                    <outlet property="delegate" destination="CF8-Oc-QfU" id="SL4-BH-H8f"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pt-2y-SaL" customClass="ChefButton" customModule="Housefood" customModuleProvider="target">
+                                <rect key="frame" x="40" y="515.5" width="334" height="55"/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.1137254902" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="umP-5Z-A4z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Get Payment Now"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="glowColor">
+                                        <color key="value" red="1" green="0.078431372550000003" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnGetPaymentNowClicked:" destination="CF8-Oc-QfU" eventType="touchUpInside" id="UH4-h4-mEu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKh-UR-GC9">
+                                <rect key="frame" x="257" y="460.5" width="127" height="30"/>
+                                <state key="normal" title="Add Bank Account">
+                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAddBankAccountClicked:" destination="CF8-Oc-QfU" eventType="touchUpInside" id="V80-oX-s8T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3pt-2y-SaL" firstAttribute="leading" secondItem="zJe-Za-BPq" secondAttribute="leading" constant="40" id="3VI-rI-S8b"/>
+                            <constraint firstItem="52R-zh-HR0" firstAttribute="top" secondItem="Nb6-rJ-Ptg" secondAttribute="bottom" constant="20" id="6dv-JA-J2w"/>
+                            <constraint firstItem="52R-zh-HR0" firstAttribute="trailing" secondItem="LQc-Qg-pQG" secondAttribute="trailing" id="Ekk-V3-BvR"/>
+                            <constraint firstItem="LQc-Qg-pQG" firstAttribute="leading" secondItem="zJe-Za-BPq" secondAttribute="leading" constant="30" id="Ioc-KD-bRU"/>
+                            <constraint firstItem="zJe-Za-BPq" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3pt-2y-SaL" secondAttribute="bottom" constant="20" id="J7d-Ph-rNJ"/>
+                            <constraint firstItem="h4U-UP-FZu" firstAttribute="top" secondItem="zJe-Za-BPq" secondAttribute="top" id="QKM-Xk-V1n"/>
+                            <constraint firstItem="52R-zh-HR0" firstAttribute="leading" secondItem="Nb6-rJ-Ptg" secondAttribute="leading" id="SxT-DZ-3ye"/>
+                            <constraint firstItem="zJe-Za-BPq" firstAttribute="trailing" secondItem="LQc-Qg-pQG" secondAttribute="trailing" constant="30" id="ZeO-8a-Mcv"/>
+                            <constraint firstItem="LQc-Qg-pQG" firstAttribute="top" secondItem="h4U-UP-FZu" secondAttribute="bottom" constant="30" id="aOB-fr-IfF"/>
+                            <constraint firstItem="Nb6-rJ-Ptg" firstAttribute="top" secondItem="LQc-Qg-pQG" secondAttribute="bottom" constant="30" id="c96-2W-qc0"/>
+                            <constraint firstItem="3pt-2y-SaL" firstAttribute="top" secondItem="aKh-UR-GC9" secondAttribute="bottom" constant="25" id="flY-RZ-tej"/>
+                            <constraint firstItem="zJe-Za-BPq" firstAttribute="trailing" secondItem="3pt-2y-SaL" secondAttribute="trailing" constant="40" id="gnA-er-79R"/>
+                            <constraint firstItem="h4U-UP-FZu" firstAttribute="leading" secondItem="zJe-Za-BPq" secondAttribute="leading" id="hJJ-Sl-94w"/>
+                            <constraint firstItem="zJe-Za-BPq" firstAttribute="trailing" secondItem="h4U-UP-FZu" secondAttribute="trailing" id="jxU-GU-YLC"/>
+                            <constraint firstItem="aKh-UR-GC9" firstAttribute="trailing" secondItem="52R-zh-HR0" secondAttribute="trailing" id="q3o-QX-k7J"/>
+                            <constraint firstItem="Nb6-rJ-Ptg" firstAttribute="leading" secondItem="LQc-Qg-pQG" secondAttribute="leading" id="r1D-ax-zV2"/>
+                            <constraint firstItem="aKh-UR-GC9" firstAttribute="top" secondItem="52R-zh-HR0" secondAttribute="bottom" priority="250" constant="5" id="rM6-Rk-HYa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zJe-Za-BPq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3Gu-u0-8vT"/>
+                    <connections>
+                        <outlet property="btnGetPaymentNow" destination="3pt-2y-SaL" id="3hy-P5-ph0"/>
+                        <outlet property="constraintPaymentMethodTableHeight" destination="yVN-Di-5qT" id="Yli-Xm-1PO"/>
+                        <outlet property="lblTotalBalance" destination="lar-yN-vvZ" id="Z1l-yO-FRe"/>
+                        <outlet property="tblPaymentMethods" destination="52R-zh-HR0" id="TxF-6A-T4a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ueu-0j-vAX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842" y="56"/>
+        </scene>
+    </scenes>
+</document>

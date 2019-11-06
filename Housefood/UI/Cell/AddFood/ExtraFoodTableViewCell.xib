@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExtraFoodTableViewCell" id="dd5-lB-HMw" customClass="ExtraFoodTableViewCell" customModule="Housefood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dd5-lB-HMw" id="MVh-Tr-JeY">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTf-bC-kfK" customClass="RoundedView" customModule="Housefood" customModuleProvider="target">
+                        <rect key="frame" x="10" y="5" width="394" height="34"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Du-x0-rET" customClass="LeftPaddingSpaceTextField" customModule="Housefood" customModuleProvider="target">
+                                <rect key="frame" x="10" y="0.0" width="239" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKc-cX-ncW">
+                                <rect key="frame" x="369" y="7" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Wq7-k9-oK0"/>
+                                    <constraint firstAttribute="width" constant="20" id="mcw-so-vet"/>
+                                </constraints>
+                                <state key="normal" image="delete"/>
+                                <connections>
+                                    <action selector="btnClickedClose:" destination="dd5-lB-HMw" eventType="touchUpInside" id="55d-yd-0Y9"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yY3-lN-yhw" customClass="LeftPaddingSpaceTextField" customModule="Housefood" customModuleProvider="target">
+                                <rect key="frame" x="249" y="0.0" width="120" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="B6E-MP-TgQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KKc-cX-ncW" secondAttribute="trailing" constant="5" id="6m8-GW-2uM"/>
+                            <constraint firstItem="7Du-x0-rET" firstAttribute="trailing" secondItem="yY3-lN-yhw" secondAttribute="trailing" constant="-120" id="CqG-Oc-CBk"/>
+                            <constraint firstItem="7Du-x0-rET" firstAttribute="height" secondItem="dTf-bC-kfK" secondAttribute="height" id="E5F-5W-K4d"/>
+                            <constraint firstItem="7Du-x0-rET" firstAttribute="centerY" secondItem="dTf-bC-kfK" secondAttribute="centerY" id="Msi-UR-65X"/>
+                            <constraint firstItem="yY3-lN-yhw" firstAttribute="centerY" secondItem="dTf-bC-kfK" secondAttribute="centerY" id="TZa-BE-NPg"/>
+                            <constraint firstItem="KKc-cX-ncW" firstAttribute="leading" secondItem="yY3-lN-yhw" secondAttribute="trailing" id="WdL-t8-26w"/>
+                            <constraint firstItem="KKc-cX-ncW" firstAttribute="centerY" secondItem="dTf-bC-kfK" secondAttribute="centerY" id="b41-Zo-FsE"/>
+                            <constraint firstItem="7Du-x0-rET" firstAttribute="leading" secondItem="dTf-bC-kfK" secondAttribute="leading" constant="10" id="fz5-k4-FGP"/>
+                            <constraint firstItem="yY3-lN-yhw" firstAttribute="height" secondItem="dTf-bC-kfK" secondAttribute="height" id="zNo-51-Zfe"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="dTf-bC-kfK" secondAttribute="bottom" constant="5" id="GDA-Pn-eyQ"/>
+                    <constraint firstItem="dTf-bC-kfK" firstAttribute="leading" secondItem="MVh-Tr-JeY" secondAttribute="leading" constant="10" id="KIr-WW-JLz"/>
+                    <constraint firstAttribute="trailing" secondItem="dTf-bC-kfK" secondAttribute="trailing" constant="10" id="KtC-RS-lP4"/>
+                    <constraint firstItem="dTf-bC-kfK" firstAttribute="top" secondItem="MVh-Tr-JeY" secondAttribute="top" constant="5" id="QU1-dP-kei"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="txtFoodName" destination="7Du-x0-rET" id="zFF-tY-jBB"/>
+                <outlet property="txtPrice" destination="yY3-lN-yhw" id="bvF-gA-SbZ"/>
+            </connections>
+            <point key="canvasLocation" x="86.956521739130437" y="86.383928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="delete" width="24" height="24"/>
+    </resources>
+</document>

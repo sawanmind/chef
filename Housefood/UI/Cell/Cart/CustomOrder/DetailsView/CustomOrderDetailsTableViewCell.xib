@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CustomOrderDetailsTableViewCell" rowHeight="992" id="KGk-i7-Jjw" customClass="CustomOrderDetailsTableViewCell" customModule="Housefood" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="-614" width="786" height="992"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="786" height="992"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nHk-GH-O6s" customClass="RoundedView" customModule="Housefood" customModuleProvider="target">
+                        <rect key="frame" x="16" y="8" width="754" height="976"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="tze-RT-zQq" customClass="RoundImage" customModule="Housefood" customModuleProvider="target">
+                                <rect key="frame" x="16" y="16" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="lvI-VD-LGb"/>
+                                    <constraint firstAttribute="height" constant="48" id="zgt-VK-Cww"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="24"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheffy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70l-zk-FK6">
+                                <rect key="frame" x="80" y="16" width="658" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fqp-Cp-G7l">
+                                <rect key="frame" x="90" y="80" width="648" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbE-H9-bof">
+                                <rect key="frame" x="90" y="139.5" width="648" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ct-vC-edI">
+                                <rect key="frame" x="90" y="213.5" width="648" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grilled Salmon" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ho-kC-Bkc" customClass="CustomUILabel" customModule="Housefood" customModuleProvider="target">
+                                <rect key="frame" x="85" y="105" width="653" height="14.5"/>
+                                <color key="backgroundColor" red="0.89009910820000004" green="0.89025193449999995" blue="0.89008945230000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2179 Brooklyn Street" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kV5-Ys-ujc">
+                                <rect key="frame" x="103" y="44" width="635" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PinPlace" translatesAutoresizingMaskIntoConstraints="NO" id="ole-Dv-B5O">
+                                <rect key="frame" x="80" y="44.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="Vb4-WT-WGi"/>
+                                    <constraint firstAttribute="height" constant="15" id="e5J-i7-ip2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K65-yc-Go2" customClass="CustomUILabel" customModule="Housefood" customModuleProvider="target">
+                                <rect key="frame" x="85" y="164.5" width="653" height="29"/>
+                                <color key="backgroundColor" red="0.89009910820000004" green="0.89025193449999995" blue="0.89008945230000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Grilled Salmon Genious Kitchen has a massive collection of recipes that are submitted Grilled Salmon  Kitchen has a massive collection of recipes that are submitted Grilled Salmon</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PxH-Bu-xCd" customClass="RoundedView" customModule="Housefood" customModuleProvider="target">
+                                <rect key="frame" x="85" y="238.5" width="653" height="80"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="sWy-kK-gqN">
+                                        <rect key="frame" x="8" y="8" width="637" height="64"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gOZ-cE-sDY">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.89009910820000004" green="0.89025193449999995" blue="0.89008945230000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sWy-kK-gqN" secondAttribute="trailing" constant="8" id="0f1-8h-kva"/>
+                                    <constraint firstAttribute="bottom" secondItem="sWy-kK-gqN" secondAttribute="bottom" constant="8" id="88T-mw-LxL"/>
+                                    <constraint firstItem="sWy-kK-gqN" firstAttribute="top" secondItem="PxH-Bu-xCd" secondAttribute="top" constant="8" id="WzF-wB-OFu"/>
+                                    <constraint firstItem="sWy-kK-gqN" firstAttribute="leading" secondItem="PxH-Bu-xCd" secondAttribute="leading" constant="8" id="hSD-fH-DjG"/>
+                                    <constraint firstAttribute="height" constant="80" id="nAS-Gy-bA7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="qXc-JF-voj">
+                                <rect key="frame" x="85" y="338.5" width="653" height="587.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QfG-vp-IfB" customClass="ChefButton" customModule="Housefood" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320.5" height="587.5"/>
+                                        <color key="backgroundColor" red="0.91764705879999997" green="0.1137254902" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="Accept">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnAcceptClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="g17-qb-M5l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFg-R6-k6f" customClass="ChefButton" customModule="Housefood" customModuleProvider="target">
+                                        <rect key="frame" x="332.5" y="0.0" width="320.5" height="587.5"/>
+                                        <color key="backgroundColor" red="0.2313431799" green="0.23138946290000001" blue="0.2313401997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="Reject">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="btnRejectClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="x58-Sy-6SE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="70l-zk-FK6" firstAttribute="leading" secondItem="tze-RT-zQq" secondAttribute="trailing" constant="16" id="3vM-xo-hyS"/>
+                            <constraint firstItem="4Ho-kC-Bkc" firstAttribute="trailing" secondItem="70l-zk-FK6" secondAttribute="trailing" id="4ct-EV-RwE"/>
+                            <constraint firstItem="PxH-Bu-xCd" firstAttribute="trailing" secondItem="K65-yc-Go2" secondAttribute="trailing" id="5rB-ur-hfT"/>
+                            <constraint firstItem="4Ho-kC-Bkc" firstAttribute="top" secondItem="Fqp-Cp-G7l" secondAttribute="bottom" constant="8" id="7xN-Cx-zpZ"/>
+                            <constraint firstItem="4Ho-kC-Bkc" firstAttribute="leading" secondItem="70l-zk-FK6" secondAttribute="leading" constant="5" id="Av9-jJ-9By"/>
+                            <constraint firstItem="pbE-H9-bof" firstAttribute="leading" secondItem="Fqp-Cp-G7l" secondAttribute="leading" id="Emw-5o-0Id"/>
+                            <constraint firstItem="kV5-Ys-ujc" firstAttribute="centerY" secondItem="ole-Dv-B5O" secondAttribute="centerY" id="FMk-Hn-bVa"/>
+                            <constraint firstAttribute="trailing" secondItem="70l-zk-FK6" secondAttribute="trailing" constant="16" id="NN8-ko-C3K"/>
+                            <constraint firstItem="pbE-H9-bof" firstAttribute="top" secondItem="4Ho-kC-Bkc" secondAttribute="bottom" constant="20" id="Op6-5R-y7h"/>
+                            <constraint firstItem="70l-zk-FK6" firstAttribute="top" secondItem="tze-RT-zQq" secondAttribute="top" id="PPB-q8-7ja"/>
+                            <constraint firstItem="kV5-Ys-ujc" firstAttribute="trailing" secondItem="70l-zk-FK6" secondAttribute="trailing" id="QHs-CX-mS5"/>
+                            <constraint firstItem="8ct-vC-edI" firstAttribute="trailing" secondItem="pbE-H9-bof" secondAttribute="trailing" id="RYU-Ud-YEV"/>
+                            <constraint firstItem="K65-yc-Go2" firstAttribute="leading" secondItem="4Ho-kC-Bkc" secondAttribute="leading" id="TbR-8J-xc4"/>
+                            <constraint firstItem="qXc-JF-voj" firstAttribute="trailing" secondItem="K65-yc-Go2" secondAttribute="trailing" id="Twm-2c-qmb"/>
+                            <constraint firstItem="ole-Dv-B5O" firstAttribute="leading" secondItem="70l-zk-FK6" secondAttribute="leading" id="V94-cq-dDx"/>
+                            <constraint firstItem="kV5-Ys-ujc" firstAttribute="leading" secondItem="ole-Dv-B5O" secondAttribute="trailing" constant="8" id="XpD-E7-KqD"/>
+                            <constraint firstAttribute="bottom" secondItem="qXc-JF-voj" secondAttribute="bottom" constant="50" id="ZQ9-nT-ZIU"/>
+                            <constraint firstItem="8ct-vC-edI" firstAttribute="top" secondItem="K65-yc-Go2" secondAttribute="bottom" constant="20" id="aOW-ll-DZ2"/>
+                            <constraint firstItem="qXc-JF-voj" firstAttribute="top" secondItem="PxH-Bu-xCd" secondAttribute="bottom" constant="20" id="acN-nq-7qd"/>
+                            <constraint firstItem="PxH-Bu-xCd" firstAttribute="top" secondItem="8ct-vC-edI" secondAttribute="bottom" constant="8" id="gF0-qe-bJq"/>
+                            <constraint firstItem="tze-RT-zQq" firstAttribute="leading" secondItem="nHk-GH-O6s" secondAttribute="leading" constant="16" id="gz5-9H-dYw"/>
+                            <constraint firstItem="Fqp-Cp-G7l" firstAttribute="trailing" secondItem="70l-zk-FK6" secondAttribute="trailing" id="lrU-Io-ruK"/>
+                            <constraint firstItem="Fqp-Cp-G7l" firstAttribute="top" secondItem="kV5-Ys-ujc" secondAttribute="bottom" constant="20" id="mKv-Yq-whk"/>
+                            <constraint firstItem="tze-RT-zQq" firstAttribute="top" secondItem="nHk-GH-O6s" secondAttribute="top" constant="16" id="nh2-qN-puE"/>
+                            <constraint firstItem="8ct-vC-edI" firstAttribute="leading" secondItem="pbE-H9-bof" secondAttribute="leading" id="q93-es-jLW"/>
+                            <constraint firstItem="Fqp-Cp-G7l" firstAttribute="leading" secondItem="70l-zk-FK6" secondAttribute="leading" constant="10" id="qJD-Ou-wCr"/>
+                            <constraint firstItem="ole-Dv-B5O" firstAttribute="top" secondItem="70l-zk-FK6" secondAttribute="bottom" constant="8" id="qm1-sF-hHN"/>
+                            <constraint firstItem="pbE-H9-bof" firstAttribute="trailing" secondItem="Fqp-Cp-G7l" secondAttribute="trailing" id="ru3-08-tIN"/>
+                            <constraint firstItem="qXc-JF-voj" firstAttribute="leading" secondItem="K65-yc-Go2" secondAttribute="leading" id="uak-sx-eIz"/>
+                            <constraint firstItem="PxH-Bu-xCd" firstAttribute="leading" secondItem="K65-yc-Go2" secondAttribute="leading" id="v2o-A1-M03"/>
+                            <constraint firstItem="K65-yc-Go2" firstAttribute="trailing" secondItem="4Ho-kC-Bkc" secondAttribute="trailing" id="vbi-HS-SZc"/>
+                            <constraint firstItem="K65-yc-Go2" firstAttribute="top" secondItem="pbE-H9-bof" secondAttribute="bottom" constant="8" id="yiB-mA-NrJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.14999999999999999"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="nHk-GH-O6s" secondAttribute="trailing" constant="16" id="BIB-pX-pr4"/>
+                    <constraint firstItem="nHk-GH-O6s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="RTn-MP-OiH"/>
+                    <constraint firstAttribute="bottom" secondItem="nHk-GH-O6s" secondAttribute="bottom" constant="8" id="SBP-vg-us9"/>
+                    <constraint firstItem="nHk-GH-O6s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="b6o-Rd-mhS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgProfile" destination="tze-RT-zQq" id="FkY-r9-JrM"/>
+                <outlet property="lblAddress" destination="kV5-Ys-ujc" id="kbU-db-U9x"/>
+                <outlet property="lblFoodDescription" destination="K65-yc-Go2" id="6dN-W9-Q5v"/>
+                <outlet property="lblFoodName" destination="4Ho-kC-Bkc" id="oRd-eu-fsF"/>
+                <outlet property="lblName" destination="70l-zk-FK6" id="7so-Jf-FNY"/>
+            </connections>
+            <point key="canvasLocation" x="484.05797101449281" y="-10.714285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="PinPlace" width="17.5" height="22.5"/>
+        <image name="user" width="786" height="1017"/>
+    </resources>
+</document>

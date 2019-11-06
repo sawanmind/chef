@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AC6-HK-sAx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Delivery-->
+        <scene sceneID="Gm7-j7-yAb">
+            <objects>
+                <viewController storyboardIdentifier="SelectDeliveryViewController" title="Delivery" id="g2t-yv-CrV" customClass="SelectDeliveryViewController" customModule="Housefood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tQx-5R-5HZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kaI-4f-RNg">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="g2t-yv-CrV" id="wnI-oW-1rh"/>
+                                    <outlet property="delegate" destination="g2t-yv-CrV" id="IqX-NR-jf6"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nGj-ly-S2D" firstAttribute="trailing" secondItem="kaI-4f-RNg" secondAttribute="trailing" id="1jL-IN-PVg"/>
+                            <constraint firstItem="nGj-ly-S2D" firstAttribute="bottom" secondItem="kaI-4f-RNg" secondAttribute="bottom" id="FYg-Ls-AOo"/>
+                            <constraint firstItem="kaI-4f-RNg" firstAttribute="leading" secondItem="nGj-ly-S2D" secondAttribute="leading" id="XtU-aE-Gea"/>
+                            <constraint firstItem="kaI-4f-RNg" firstAttribute="top" secondItem="nGj-ly-S2D" secondAttribute="top" id="plB-4O-X7z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nGj-ly-S2D"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Delivery" id="8Gp-Yv-LHh"/>
+                    <connections>
+                        <outlet property="tblView" destination="kaI-4f-RNg" id="woq-Zo-SXZ"/>
+                        <segue destination="AaI-3n-VdQ" kind="show" identifier="SegueFromDeliveryToAddress" id="gcQ-o5-syu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cv8-Mg-KXW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="858" y="58"/>
+        </scene>
+        <!--Delivery-->
+        <scene sceneID="sKC-5G-PTx">
+            <objects>
+                <viewController title="Delivery" id="AaI-3n-VdQ" customClass="DeliveryDetailsViewController" customModule="Housefood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WA3-KU-c0M">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1bz-Kn-lZQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="AaI-3n-VdQ" id="GD7-hX-anC"/>
+                                    <outlet property="delegate" destination="AaI-3n-VdQ" id="xhs-E4-FAw"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1bz-Kn-lZQ" firstAttribute="top" secondItem="4KG-7d-Z1e" secondAttribute="top" id="GNn-Ex-WTI"/>
+                            <constraint firstItem="4KG-7d-Z1e" firstAttribute="bottom" secondItem="1bz-Kn-lZQ" secondAttribute="bottom" id="kB6-K2-jnj"/>
+                            <constraint firstItem="4KG-7d-Z1e" firstAttribute="trailing" secondItem="1bz-Kn-lZQ" secondAttribute="trailing" id="lfm-Fa-ggO"/>
+                            <constraint firstItem="1bz-Kn-lZQ" firstAttribute="leading" secondItem="4KG-7d-Z1e" secondAttribute="leading" id="zXy-xf-NSj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4KG-7d-Z1e"/>
+                    </view>
+                    <connections>
+                        <outlet property="tblView" destination="1bz-Kn-lZQ" id="wWx-me-dRD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vjw-tO-BG6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704" y="58"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2YM-Qk-XE7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AC6-HK-sAx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Gdr-ub-PMi">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="g2t-yv-CrV" kind="relationship" relationship="rootViewController" id="7Mk-TA-pAy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xhf-B4-W14" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="57.589285714285708"/>
+        </scene>
+    </scenes>
+</document>

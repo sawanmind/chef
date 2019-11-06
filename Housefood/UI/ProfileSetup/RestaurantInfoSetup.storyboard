@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rzv-jt-Syu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="kmI-B9-RA2">
+            <objects>
+                <navigationController id="rzv-jt-Syu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RaC-Ga-dct">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7eX-nh-RsD" kind="relationship" relationship="rootViewController" id="L6g-SQ-Tj0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jqF-e0-4ll" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-858" y="136"/>
+        </scene>
+        <!--Restaurant Info Setup View-->
+        <scene sceneID="cM9-mo-EIS">
+            <objects>
+                <viewController storyboardIdentifier="RestaurantProfileSetup" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7eX-nh-RsD" customClass="RestaurantInfoSetupView" customModule="Housefood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QHJ-aY-lDP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your restaurant information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elm-B7-6Fv">
+                                <rect key="frame" x="16" y="104" width="382" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="T6T-F8-Xdl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IgS-Qo-duW" userLabel="NameForm" customClass="FormStyle" customModule="Housefood" customModuleProvider="target">
+                                <rect key="frame" x="16" y="170" width="382" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aze-xO-TeX">
+                                        <rect key="frame" x="8" y="0.0" width="100" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oiU-Wu-qrG">
+                                        <rect key="frame" x="116" y="0.0" width="266" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="UYZ-4i-mC5"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nxy-Sz-Bj4" userLabel="AddressForm" customClass="FormStyle" customModule="Housefood" customModuleProvider="target">
+                                <rect key="frame" x="16" y="246" width="382" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEP-fD-0c6">
+                                        <rect key="frame" x="8" y="0.0" width="100" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x9v-Lk-OwW">
+                                        <rect key="frame" x="116" y="0.0" width="266" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Ie5-YX-RrJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iDh-gP-Wm7" userLabel="PhoneForm" customClass="FormStyle" customModule="Housefood" customModuleProvider="target">
+                                <rect key="frame" x="16" y="322" width="382" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mud-Vf-rcd">
+                                        <rect key="frame" x="8" y="0.0" width="100" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B5L-sv-fyS">
+                                        <rect key="frame" x="116" y="0.0" width="266" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="V7c-gh-UOn"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4C-5v-bes" customClass="RoundButton" customModule="Housefood" customModuleProvider="target">
+                                <rect key="frame" x="16" y="432" width="382" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Phs-eY-aZW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Save"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="elm-B7-6Fv" firstAttribute="leading" secondItem="79g-0f-rFL" secondAttribute="leading" constant="16" id="1XH-3E-3YB"/>
+                            <constraint firstItem="79g-0f-rFL" firstAttribute="trailing" secondItem="nxy-Sz-Bj4" secondAttribute="trailing" constant="16" id="Gom-xW-RrP"/>
+                            <constraint firstItem="79g-0f-rFL" firstAttribute="trailing" secondItem="elm-B7-6Fv" secondAttribute="trailing" constant="16" id="MJr-Bp-Cuy"/>
+                            <constraint firstItem="IgS-Qo-duW" firstAttribute="top" secondItem="elm-B7-6Fv" secondAttribute="bottom" constant="16" id="MQE-vU-gdk"/>
+                            <constraint firstItem="W4C-5v-bes" firstAttribute="top" secondItem="iDh-gP-Wm7" secondAttribute="bottom" constant="50" id="Ozk-b8-YX3"/>
+                            <constraint firstItem="79g-0f-rFL" firstAttribute="trailing" secondItem="iDh-gP-Wm7" secondAttribute="trailing" constant="16" id="TPE-Lb-nuK"/>
+                            <constraint firstItem="iDh-gP-Wm7" firstAttribute="leading" secondItem="79g-0f-rFL" secondAttribute="leading" constant="16" id="Tqo-29-HZi"/>
+                            <constraint firstItem="W4C-5v-bes" firstAttribute="leading" secondItem="79g-0f-rFL" secondAttribute="leading" constant="16" id="VF1-NG-o5m"/>
+                            <constraint firstItem="79g-0f-rFL" firstAttribute="trailing" secondItem="IgS-Qo-duW" secondAttribute="trailing" constant="16" id="e80-s3-J71"/>
+                            <constraint firstItem="elm-B7-6Fv" firstAttribute="top" secondItem="79g-0f-rFL" secondAttribute="top" constant="16" id="epl-oc-Lzb"/>
+                            <constraint firstItem="IgS-Qo-duW" firstAttribute="leading" secondItem="79g-0f-rFL" secondAttribute="leading" constant="16" id="jDv-aa-fU9"/>
+                            <constraint firstItem="iDh-gP-Wm7" firstAttribute="top" secondItem="nxy-Sz-Bj4" secondAttribute="bottom" constant="16" id="kQC-hv-xeR"/>
+                            <constraint firstItem="nxy-Sz-Bj4" firstAttribute="leading" secondItem="79g-0f-rFL" secondAttribute="leading" constant="16" id="kTF-kl-jcY"/>
+                            <constraint firstItem="nxy-Sz-Bj4" firstAttribute="top" secondItem="IgS-Qo-duW" secondAttribute="bottom" constant="16" id="kUD-Ab-M8d"/>
+                            <constraint firstItem="79g-0f-rFL" firstAttribute="trailing" secondItem="W4C-5v-bes" secondAttribute="trailing" constant="16" id="vPe-Q6-PoW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="79g-0f-rFL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VZ8-BW-ytg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FBU-zd-Tm4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-86" y="136"/>
+        </scene>
+    </scenes>
+</document>
